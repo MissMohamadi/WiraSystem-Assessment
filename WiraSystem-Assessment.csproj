@@ -12,6 +12,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
-
+   <ItemGroup>
+    <ProjectReference Include="WeatherApi.Tests\WeatherApi.Tests.csproj" />
+  </ItemGroup>
 
 </Project>
