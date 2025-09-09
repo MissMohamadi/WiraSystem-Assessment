@@ -1,0 +1,6 @@
+C:\Users\Daneshmande MANNNNN\Desktop\WiraSystem-Assessment2\WiraSystem-Assessment\WeatherApi.Tests\obj\Debug\net8.0\WeatherApi.Tests.csproj.AssemblyReference.cache
+C:\Users\Daneshmande MANNNNN\Desktop\WiraSystem-Assessment2\WiraSystem-Assessment\WeatherApi.Tests\obj\Debug\net8.0\WeatherApi.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daneshmande MANNNNN\Desktop\WiraSystem-Assessment2\WiraSystem-Assessment\WeatherApi.Tests\obj\Debug\net8.0\WeatherApi.Tests.AssemblyInfoInputs.cache
+C:\Users\Daneshmande MANNNNN\Desktop\WiraSystem-Assessment2\WiraSystem-Assessment\WeatherApi.Tests\obj\Debug\net8.0\WeatherApi.Tests.AssemblyInfo.cs
+C:\Users\Daneshmande MANNNNN\Desktop\WiraSystem-Assessment2\WiraSystem-Assessment\WeatherApi.Tests\obj\Debug\net8.0\WeatherApi.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Daneshmande MANNNNN\Desktop\WiraSystem-Assessment2\WiraSystem-Assessment\WeatherApi.Tests\obj\Debug\net8.0\WeatherApi.Tests.sourcelink.json
