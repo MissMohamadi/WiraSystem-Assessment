@@ -487,11 +487,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daneshmande MANNNNN\\Desktop\\WiraSystem-Assessment\\WiraSystem-Assessment\\WiraSystem-Assessment.csproj",
+      "projectUniqueName": "C:\\Users\\Daneshmande MANNNNN\\Desktop\\WiraSystem-Assessment2\\WiraSystem-Assessment\\WiraSystem-Assessment.csproj",
       "projectName": "WiraSystem-Assessment",
-      "projectPath": "C:\\Users\\Daneshmande MANNNNN\\Desktop\\WiraSystem-Assessment\\WiraSystem-Assessment\\WiraSystem-Assessment.csproj",
+      "projectPath": "C:\\Users\\Daneshmande MANNNNN\\Desktop\\WiraSystem-Assessment2\\WiraSystem-Assessment\\WiraSystem-Assessment.csproj",
       "packagesPath": "C:\\Users\\Daneshmande MANNNNN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daneshmande MANNNNN\\Desktop\\WiraSystem-Assessment\\WiraSystem-Assessment\\obj\\",
+      "outputPath": "C:\\Users\\Daneshmande MANNNNN\\Desktop\\WiraSystem-Assessment2\\WiraSystem-Assessment\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Daneshmande MANNNNN\\AppData\\Roaming\\NuGet\\NuGet.Config"

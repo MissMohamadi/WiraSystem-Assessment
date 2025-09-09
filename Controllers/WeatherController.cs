@@ -34,10 +34,12 @@ namespace WiraSystem_Assessment.Controllers
                 return Ok(weatherData);
             }
             catch (Exception ex)
-            {
-                // Log the exception (in a real app, use a logging framework)
-                return StatusCode(500, "An error occurred while fetching weather data.");
-            }
+{
+    // Log the exception (in a real app, use a logging framework)
+    // حالا ارور واقعی رو نشون می‌ده
+    return StatusCode(500, $"An error occurred while fetching weather data: {ex.Message}");
+}
+
         }
     }
 }

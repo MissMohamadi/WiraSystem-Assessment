@@ -1,9 +1,25 @@
+using WiraSystem_Assessment.Application.Interfaces;
+using WiraSystem_Assessment.Infrastructure.ExternalClients;
+using WiraSystem_Assessment.Infrastructure.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// اضافه کردن HttpClient برای فراخوانی APIها
+builder.Services.AddHttpClient<IOpenWeatherMapClient, OpenWeatherMapClient>((serviceProvider, client) =>
+{
+    client.BaseAddress = new Uri("https://api.openweathermap.org/");
+});
+
+// تنظیم Dependency Injection برای Interfaceها و پیاده‌سازی‌ها
+// OpenWeatherMapClient رو دیگه نیاز نیست اینجا اضافه کنیم چون بالا اضافه شده
+builder.Services.AddScoped<IWeatherService, WeatherService>();
 
 var app = builder.Build();
 
@@ -16,29 +32,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+app.UseAuthorization();
 
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast")
-.WithOpenApi();
+app.MapControllers();
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
