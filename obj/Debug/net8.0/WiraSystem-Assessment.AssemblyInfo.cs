@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WiraSystem-Assessment")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02b2f12e966d555aac72f5058219148fda1ff442")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c1cc62bd563443ec994ca47969016f97e52a6e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("WiraSystem-Assessment")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WiraSystem-Assessment")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
