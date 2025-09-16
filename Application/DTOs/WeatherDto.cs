@@ -1,22 +1,21 @@
 namespace WiraSystem_Assessment.Application.DTOs
 {
-    public class WeatherDto
-    {
-        public double Temperature { get; set; } // in Celsius
-        public int Humidity { get; set; } // in %
-        public double WindSpeed { get; set; } // in meters per second
-        public int AirQualityIndex { get; set; } // AQI
-        public double Latitude { get; set; }
-        public double Longitude { get; set; }
+    public record WeatherDto(
+        double Temperature, // in Celsius
+        int Humidity, // in %
+        double WindSpeed, // in meters per second
+        int AirQualityIndex, // AQI
+        double Latitude,
+        double Longitude,
         
         // Major pollutants
-        public double? CO { get; set; } // Carbon Monoxide
-        public double? NO { get; set; } // Nitrogen Monoxide
-        public double? NO2 { get; set; } // Nitrogen Dioxide
-        public double? O3 { get; set; } // Ozone
-        public double? SO2 { get; set; } // Sulphur Dioxide
-        public double? PM2_5 { get; set; } // Particulates (less than 2.5 μm)
-        public double? PM10 { get; set; } // Particulates (less than 10 μm)
-        public double? NH3 { get; set; } // Ammonia
-    }
+        double? CO, // Carbon Monoxide
+        double? NO, // Nitrogen Monoxide
+        double? NO2, // Nitrogen Dioxide
+        double? O3, // Ozone
+        double? SO2, // Sulphur Dioxide
+        double? PM2_5, // Particulates (less than 2.5 μm)
+        double? PM10, // Particulates (less than 10 μm)
+        double? NH3 // Ammonia
+    );
 }
