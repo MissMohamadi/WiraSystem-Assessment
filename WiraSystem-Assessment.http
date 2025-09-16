@@ -1,0 +1,6 @@
+@WiraSystem_Assessment_HostAddress = http://localhost:5227
+
+GET {{WiraSystem_Assessment_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
